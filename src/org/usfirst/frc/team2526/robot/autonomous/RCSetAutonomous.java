@@ -16,7 +16,7 @@ public class RCSetAutonomous extends CommandGroup {
     public  RCSetAutonomous() {
     	
     	addParallel(new ExtendRCGrabber());
-    	addSequential(new WaitCommand(1));
+    	addSequential(new WaitCommand(7));
     	addSequential(new TimedDrive(0.6, false));
     	addSequential(new TimedDrive(2.8, true));
     	addSequential(new RetractRCGrabber());
